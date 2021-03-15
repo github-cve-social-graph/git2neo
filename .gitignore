@@ -4,3 +4,6 @@
 data
 *.pyc
 *.idea
+private_config.py
+
+error
