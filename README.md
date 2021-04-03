@@ -3,7 +3,9 @@ This repo aims to crawl data from github network of CVE-related directories
 Then, to construct the relationship graph into neo4j schema.  
   
 # Installization
- - Install requirements, run cmd: pip install -r python_requirement.txt
+ - Install requirements, run cmd: 
+        
+        pip install -r python_requirement.txt
  - Initialize neo4j
     - Download neo4j source to a folder
      
@@ -58,7 +60,9 @@ Then, to construct the relationship graph into neo4j schema.
             } 
             RETURN r2, p
       ![alt text](./samples/imgs/SampleQuery5.jpg)
-     
+    - Visualize sample histograms, run cmd:
+            
+            python visualization/histograms.py
 # Notes
   - *(1) Only Enterprise edition has these functionalities, Community edition has to use default single database.*
   - *(2) Sometime, neo4j browser show nothing. This seems to be a bug. Move between web browsers like Chorme, EE, FireFox,... might help.*
